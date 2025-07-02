@@ -1,14 +1,14 @@
 ﻿
 ------------------------TABLAS---------------------------------------------------------------
 
-NationalTeam
+Team
 public int Id { get; set; }
 public string Name { get; set; }
 public string? Country { get; set; }
-public int? FifaRanking { get; set; }
+public int? Ranking { get; set; }
 public string? NickName { get; set; }
-Flag imagen
-color de camiseta imagen
+public Flag imagen
+public ShirtColor imagen
 
 ---------------------------------------------------------------
 Championships
@@ -22,16 +22,21 @@ Icon
 Matches
 ID
 ChampionshipID
-NationalTeamHomeID
-NationtalTeamAwayID
+HomeTeamID
+AwayTeamID
+HomeTeamScore
+AwayTeamScore
+Result {homeWin, AwayWin, Tied}
+
 
 ---------------------------------------------------------------
 Bets
 ID
 UserID
 MatchID
-HomeTeamGoals
-awayTeamGoals
+HomeTeamScore
+AwayTeamScore
+Result
 
 ---------------------------------------------------------------
 Score 
@@ -50,7 +55,7 @@ Users
 
 
 ------------------------Cosas por hacer---------------------------------------
-
+- Hacer lo de EF primero
 - Hacer los usuarios primero
 - hacer la autorizacion
 - hacer el generico para la paginacion
@@ -58,3 +63,18 @@ Users
 - hacedr el errohandler
 - hacer el mapper
 
+------------------------Controller---------------------------------------
+agarrar lo que pasa 
+mapearlo
+guardarlo
+
+
+------------------------Cosas por hacer---------------------------------------
+
+
+
+------------------------Cosas por hacer---------------------------------------
+
+aceirto resultado completo 4 puntos
+Acierto equipo ganador 2 puntos
+desacierto 0 puntos
