@@ -131,7 +131,7 @@ namespace SimpleProdeTest
             //var context = new Mock<ApplicationDbContext>();
             //var service = new TeamService(context.Object, context);
 
-            var dto = new TeamCreateDTO { Name = "Desconocido" };
+            var dto = new TeamCreateDTO { Name = "Desconocido." };
             
             //Act
             var result = await service.Update(999, dto);
